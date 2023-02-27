@@ -111,26 +111,3 @@ class AnimalType(Enum):
     HORSE = 4
     CAMEL = 5
     DONKEY = 6
-
-
-if __name__ == '__main__':
-    db = AnimalDataBase()
-
-    c = Pets('ca', '4545', 1)
-    d = Pets('dd', '4545', 2)
-    h = Pets('hh', '4545', 3)
-    ho = PackAnimals('ho', '4545')
-    ca = PackAnimals('ca', '4545', 5)
-    do = PackAnimals('do', '4545', 6)
-
-    h.train_pets('sfsff')
-    d.train_pets('aaa')
-
-    db.add_pets_in_db(c)
-    db.add_pets_in_db(d)
-    db.add_pets_in_db(h)
-    db.add_pets_in_db(ho)
-    db.add_pets_in_db(ca)
-    db.add_pets_in_db(do)
-
-    print(db.get_info(5, 'ca'))

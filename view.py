@@ -39,8 +39,3 @@ class View:
                     self.commander.trainPets(int(answer[1]), answer[0], answer[2])
                 case _:
                     print('Неверная команда, для просмотра списка команд введите "help"')
-
-
-if __name__ == '__main__':
-    v = View()
-    v.work()
